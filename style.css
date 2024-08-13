@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+body{
+  background-image: linear-gradient(to right,rgb(43, 43, 43) 30%, rgb(121, 121, 121) 90%);
+
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  
+  
+}
+
+.container {
+  width: 65%;
+  height: 85%;
+  /* background-color: aqua; */
+  justify-self:center;
+  display: grid;
+  grid-gap: 1vw;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 40px 28% 28% 28%;
+  /* border: 1px solid rgb(206, 204, 204); */
+  grid-column-gap: 2vw;
+  
+}
+
+#header {
+  grid-column: 1/3;
+  color: #fff;
+  /* border: 1px dashed darkcyan; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  
+
+  font-size: 2vw;
+}
+
+#subscribe{
+  color: rgb(214, 214, 214);
+  font-size: 20px;
+  align-self: end;
+}
+
+#blog{
+  font-size: 2rem;
+  align-self: end;
+  justify-self: center;
+}
+.card {
+  height: 95%;
+  box-shadow: 3px 4px 0px #c4c4c5;
+  display: grid;
+  padding: 1em 1em 1em 1em;
+  align-content:space-around;
+  /* grid-template-rows: 30px 1fr 1fr 1fr; */
+  grid-auto-rows: auto;
+  background-color: #fff;
+}
+i.fa {
+  color: rgb(214, 214, 214);
+  justify-self: end;
+  font-size: 20px;
+  align-self: end;
+  
+  
+}
+
+.word1 {
+  font-weight: 600;
+  color: #1657d8;
+font-size: 12px;
+
+}
+.design1 {
+  font-weight: 600;
+  color: rgb(0, 185, 15);
+  font-size: 12px;
+ 
+}
+
+.blogheading{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+p.date{
+    font-weight: 600;
+    color: rgb(104, 101, 101);
+    font-size: 11px;
+}
+
+p{
+font-size: 12px;
+}
+.cardlink{
+  /* padding: 2em 0 0 0; */
+  /* display: inline; */
+  color: rgb(0, 120, 233);
+  align-self:end;
+  font-size: 12px;
+}
+
+@media (max-width: 1400px){
+
+
+  .container {
+    width: 75%;
+    height: 85%;
+    /* background-color: aqua; */
+    justify-self:center;
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px 28% 28% 28%;
+    /* border: 1px solid rgb(206, 204, 204); */
+    grid-column-gap: 2vw;
+    
+  }
+  
+}
+
+@media (max-width: 1000px){
+
+  .container {
+    width: 80%;
+    height: 85%;
+    /* background-color: aqua; */
+    justify-self:center;
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px 28% 28% 28%;
+    /* border: 1px solid rgb(206, 204, 204); */
+    grid-column-gap: 2vw;
+    
+  }
+  
+}
+@media (max-width: 900px){
+
+  .container {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ 
+  }
+
+
+  .card {
+    height: 250px;
+    /* box-shadow: 0px 0px 15px rgb(180, 179, 179); */
+    display: grid;
+    padding: 1em 1em 1em 1em;
+    align-content:space-around;
+    /* grid-template-rows: 30px 1fr 1fr 1fr; */
+  
+  }
+
+  .word1 {
+    font-weight: 600;
+    color: #1657d8;
+  font-size: 18px;
+  
+  }
+  .design1 {
+    font-weight: 600;
+    color: rgb(0, 185, 15);
+    font-size: 18px;
+   
+  }
+  
+  .blogheading{
+      font-weight: 600;
+      font-size: 30px;
+  }
+  
+  p.date{
+      font-weight: 600;
+      color: rgb(104, 101, 101);
+      font-size: 15px;
+  }
+  
+  p{
+  font-size: 15px;
+  }
+  .cardlink{
+    /* padding: 2em 0 0 0; */
+    color: rgb(0, 120, 233);
+    align-self:end;
+    font-size: 15px;
+  }
+  
+}
+
+@media (max-width: 500px){
+
+  .container {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ 
+  }
+
+  a#subscribe{
+    font-size: 2vw;
+    color: grey;
+    
+    align-self: end;
+  }
+  
+  a#blog{
+    font-size: 5vw;
+    font-weight: 600;
+    align-self: end;
+    justify-self: center;
+  }
+
+  i.fa{
+    font-size: 2vw;
+  }
+
+  .card {
+    height: 250px;
+    /* box-shadow: 0px 0px 15px rgb(180, 179, 179); */
+    display: grid;
+    padding: 1em 1em 1em 1em;
+    align-content:space-around;
+    /* grid-template-rows: 30px 1fr 1fr 1fr; */
+  
+  }
+
+  .word1 {
+    font-weight: 600;
+    color: #1657d8;
+  font-size: 18px;
+  
+  }
+  .design1 {
+    font-weight: 600;
+    color: rgb(0, 185, 15);
+    font-size: 18px;
+   
+  }
+  
+  .blogheading{
+      font-weight: 600;
+      font-size: 30px;
+  }
+  
+  p.date{
+      font-weight: 600;
+      color: rgb(104, 101, 101);
+      font-size: 15px;
+  }
+  
+  p{
+  font-size: 15px;
+  }
+  .cardlink{
+    /* padding: 2em 0 0 0; */
+    color: rgb(0, 120, 233);
+    align-self:end;
+    font-size: 15px;
+  }
+  
+}
+
+
+@media (max-width: 400px){
+
+  .container {
+    width: 90%;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ 
+  }
+ 
+#header {
+  height: 50px;
+  /* border: 1px dashed darkcyan; */
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  
+
+  
+}
+
+  a#subscribe{
+    font-size: 3vw;
+    color: grey;
+    
+    align-self: end;
+  }
+  
+  a#blog{
+    font-size: 7vw;
+    font-weight: 600;
+    align-self: end;
+    /* justify-self: center; */
+  }
+
+  i.fa{
+    font-size: 3vw;
+  }
+
+  .card {
+    height: auto;
+    /* box-shadow: 0px 0px 15px rgb(180, 179, 179); */
+    display: grid;
+    padding: 1em 1em 1em 1em;
+    align-content:space-around;
+    /* grid-template-rows: 30px 1fr 1fr 1fr; */
+  
+  }
+
+}
+
